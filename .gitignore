@@ -2,5 +2,9 @@ bower_components
 build
 coverage
 node_modules
+.idea
+yarn.lock
+anotations
+env
 /lib
 **/*.soy.js
