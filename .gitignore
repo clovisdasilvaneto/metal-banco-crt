@@ -1,10 +1,6 @@
-bower_components
-build
-coverage
 node_modules
-.idea
+/.idea
 yarn.lock
 anotations
 env
-/lib
 **/*.soy.js
