@@ -1,0 +1,70 @@
+.dropdown {
+
+  position: relative;
+  font-size: 14px;
+
+  .dropdown-display{
+    position: relative;
+  }
+
+  .dropdown-list-wrapper{
+    display: none;
+    width: 100%;
+    top: 40px;
+    box-shadow: 0 2px 14px 0 rgba($color-cornflower-blue, 0.1);
+    border: solid 1px $color-pale-grey-three;
+    position: absolute;
+    z-index: 5;
+    background: #fff;
+
+    input{
+      background: no-repeat 5px center transparent url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSIgIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4NCiAgIDxwYXRoIGZpbGw9IiMwMDAwMDAiIGQ9Ik05LjUsM0E2LjUsNi41IDAgMCwxIDE2LDkuNUMxNiwxMS4xMSAxNS40MSwxMi41OSAxNC40NCwxMy43M0wxNC43MSwxNEgxNS41TDIwLjUsMTlMMTksMjAuNUwxNCwxNS41VjE0LjcxTDEzLjczLDE0LjQ0QzEyLjU5LDE1LjQxIDExLjExLDE2IDkuNSwxNkE2LjUsNi41IDAgMCwxIDMsOS41QTYuNSw2LjUgMCAwLDEgOS41LDNNOS41LDVDNyw1IDUsNyA1LDkuNUM1LDEyIDcsMTQgOS41LDE0QzEyLDE0IDE0LDEyIDE0LDkuNUMxNCw3IDEyLDUgOS41LDVaIiAvPg0KPC9zdmc+');
+      padding-left: 38px;
+      padding-top: 9px;
+      padding-bottom: 12px;
+      border-radius: 0;
+
+      &, &:focus{
+        border-color: transparent;
+        border-bottom: 1px solid $color-pale-grey-three;
+      }
+    }
+  }
+
+  .arrow_box{
+    position: relative;
+    background: $color-blue-grey-two;
+    position: absolute;
+    right: 12px;
+    z-index: 2;
+    height: 4px;
+    top: 19px;
+
+    &:after {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-bottom-color: $color-blue-grey-two;
+      border-width: 4px;
+      margin-left: -4px;
+    }
+    &:before{
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-top-color:$color-blue-grey-two;
+      border-width: 4px;
+      margin-left: -4px;
+    }
+  }
+}
