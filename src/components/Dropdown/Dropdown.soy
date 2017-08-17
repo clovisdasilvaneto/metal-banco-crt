@@ -1,0 +1,28 @@
+{namespace Dropdown}
+
+/**
+* @param shown
+* @param? items
+* @param? activeDropdownItem
+* @param? warning
+*/
+{template .render}
+<div class="dropdown">
+	<span class="arrow_box"></span>
+	<input type="text"
+		   class="dropdown-display {$warning ? 'input-error' : ''}"
+		   placeholder="{$activeDropdownItem ? $activeDropdownItem.name : 'Select your plan'}"
+		   readonly="true" />
+	<span class="warning-label {$warning ? 'show' : ''}">{$warning}</span>
+
+	<div class="{$shown ? 'dropdown-list-wrapper show' : 'dropdown-list-wrapper'}">
+
+		<input type="text" data-onKeydown="bindKeyCode" data-onKeyup="searchItem" placeholder="Type your search" class="dropdown-input" />
+		<ul class="dropdown-list">
+			{foreach $item in $items}
+				<li class="dropdown-list-item" data-selected="{$item.selected}"  data-id="{$item.id}" data-onClick="changeActivePlan">{$item.name} ({$item.months} meses)</li>
+			{/foreach}
+		</ul>
+	</div>
+</div>
+{/template}
