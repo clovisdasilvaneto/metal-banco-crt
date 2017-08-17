@@ -1,0 +1,39 @@
+{namespace Calculator}
+
+/**
+* @param? labels
+* @param? labelDisplay
+* @param? operators
+* @param? warning
+*/
+{template .render}
+
+<div class="calculator">
+	<section class="calculator-display {$warning ? 'input-error' : ''}" id="calculator-display">
+		{$labelDisplay}
+	</section>
+	<div class="warning-label {$warning ? 'show' : ''}">{$warning}</div>
+	<section class="calculator-buttons-wrapper">
+		<section class="calculator-digits">
+
+			{foreach $label in $labels}
+				{call CalculatorButton.render}
+					{param text: $label.text /}
+					{param click: $label.clickFn /}
+					{param buttonClass: $label.buttonClass /}
+				{/call}
+			{/foreach}
+		</section>
+
+		<section class="calculator-operators">
+			{foreach $operator in $operators}
+				{call CalculatorButton.render}
+					{param text: $operator.text /}
+					{param click: $operator.clickFn /}
+					{param buttonClass: $operator.buttonClass /}
+				{/call}
+			{/foreach}
+		</section>
+	</section>
+</div>
+{/template}
