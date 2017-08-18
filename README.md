@@ -28,9 +28,10 @@ This is the application made in metaljs and webpack to calculate the compound in
 	  ```
 
 4. Build the environment:
-		```
-		npm run build
-		```
+
+	  ```
+	  npm run build
+	  ```
 
 5. Run the environment:
 
