@@ -1,6 +1,1 @@
-node_modules
 /.idea
-yarn.lock
-anotations
-env
-**/*.soy.js
