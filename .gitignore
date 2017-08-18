@@ -4,3 +4,4 @@ yarn.lock
 anotations
 env
 **/*.soy.js
+/dist
