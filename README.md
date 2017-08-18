@@ -35,6 +35,11 @@ This is the application made in metaljs and webpack to calculate the compound in
 
 5. Open the project at http://localhost:8080/ in your browser.
 
+To run the tests, you need to install karma (globaly is recommended):
+	```
+		npm install -g karma
+	```
+
 You can build this project using:
 	```
 	npm run build
