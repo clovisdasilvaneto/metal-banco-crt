@@ -24,16 +24,21 @@ This is the application made in metaljs and webpack to calculate the compound in
 3. Run the server:
 
 	  ```
+	  npm run server
+	  ```
+
+4. Build the environment:
+		```
+	  npm run build
+	  ```
+
+5. Run the environment:
+
+	  ```
 	  npm run start
 	  ```
 
-4. Run the environment:
-
-	  ```
-	  npm run dev
-	  ```
-
-5. Open the project at http://localhost:8080/ in your browser.
+6. Open the project at http://localhost:8080/ in your browser.
 
 To run the tests, you need to install karma (globaly is recommended):
 	```

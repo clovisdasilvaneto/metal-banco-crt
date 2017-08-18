@@ -16,11 +16,10 @@
     "test"
   ],
   "scripts": {
-    "start": "npm run server",
+    "start": "webpack-dev-server --open",
     "server": "cd server && node app",
     "build-soy": "metal soy",
     "build": "metal soy && webpack",
-    "dev": "metal soy && webpack-dev-server --open",
     "test": "metal soy && karma start"
   },
   "keywords": [
