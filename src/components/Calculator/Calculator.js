@@ -127,7 +127,7 @@ class Calculator extends Component {
 		
 		try {
 			instance.warning = false;
-			instance.labelDisplay = Math.abs(new Function('', 'return '+textDisplay)()).toString();
+			instance.labelDisplay = Math.abs(eval(textDisplay)).toString();
 			return instance.emitListener(instance.labelDisplay);
 		}catch(e) {
 			return instance.warning = "Please type a valid expression";
