@@ -1,5 +1,16 @@
 const http = require('http');
 const port = process.env.PORT || 3100;
+const heroku = require("heroku-ping");
+
+heroku.ping({
+	interval: 10000,     // milliseconds, defaults to 30 minutes
+	silent: false,       // logging (default: false)
+	apps: [{
+		name: 'metal-form-banco-crt', // heroku app name - required
+		path: "/calculator",     // default to root
+		secure: false      // requires https (defaults: false)
+	}]
+});
 
 http.createServer(function (req, res) {
 	if(req.url != '/calculator') return res.writeHead(200);
