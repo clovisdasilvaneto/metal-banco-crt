@@ -39,3 +39,8 @@ You can build this project using:
 	```
 	npm run build
 	```
+
+You can run the tests using:
+	```
+	 npm run test
+	```
