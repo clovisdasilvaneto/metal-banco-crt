@@ -5,7 +5,7 @@
 	box-shadow: 0 0 20px 0 rgba($color-dark-navy, 0.1);
 	@include flex(row, initial, stretch);
 	margin: 0 auto 122px;
-	width: 688px;
+	max-width: 688px;
 	flex-wrap: wrap;
 }
 
