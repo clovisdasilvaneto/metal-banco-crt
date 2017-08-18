@@ -8,24 +8,12 @@
     "node": ">=0.12.0",
     "npm": ">=3.0.0"
   },
-  "main": "lib/SelectInput.js",
-  "jsnext:main": "src/SelectInput.js",
-  "files": [
-    "lib",
-    "src",
-    "test"
-  ],
   "scripts": {
       "start": "node app",
   },
   "keywords": [
     "metal"
   ],
-  "babel": {
-    "presets": [
-      "metal"
-    ]
-  },
   "dependencies": {
   },
   "devDependencies": {
